@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <title>Encriptador challenge</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo.png" alt="logo de alura" class="logo">
+    </header>
+    <main>
+        <section id="principal">
+            <section class="seccion1">
+                <textarea class="text-area" cols="15" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            
+                <div class="contenedor-cajatexto">
+                    <img src="/imagenes/alerta.png">
+                    <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+                </div>
+
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btndesEncriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section class="seccion2">
+                    <div class="respuesta">
+                        <textarea class="mensaje"></textarea>
+                        <button class="btn-copiar" onclick="copiarAlPortapapeles()">Copiar</button>
+                        <div class="mensaje-inf">
+
+                            <h3 class="mensaje-inf-1">Ningun mensaje fue <br> encontrado</h3>
+                            <p class="mensaje-inf-2">Ingresa el texto que desees encriptar o <br>desencriptar.
+                        </div>
+                        </p>
+                    </div>
+
+                
+
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Elías Viloria</p>
+    </footer>
+<script src="script.js"></script>  
+</body>
+</html>
